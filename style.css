@@ -6,7 +6,9 @@
     --light-green: #519767;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     font-family: 'Poppins', sans-serif;
 }
