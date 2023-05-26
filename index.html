@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
 
   <title>Softronic</title>
 </head>
@@ -52,7 +52,12 @@
           <p class="section-heading-content">
             training and development solutions for individuals and commercial enterprises.
           </p>
-          <button class="button" type="button">Contact Us</button>
+
+          <a href="tel:9037291113">
+            <button class="button" type="button">
+              Contact Us
+            </button>
+          </a>
         </div>
         <div class="firstSection-imageContainer col-md-6 col-lg-6 col-xl-8 col-sm-6 text-center">
           <img src="./assets/men-icon-laptop.jpg" alt="">
@@ -83,8 +88,13 @@
           <p class="mt-4" style="font-weight: 400;font-size:15px">Softroniics offers best-in-class training and
             development solutions through a dedicated team of trainers across a range of domains </p>
           <div class=" mb-md-3 btn-parent mt-4">
-            <button class="dark-btn" style="margin-right: 20px;">Call Now</button>
-            <button class="light-btn">Whatsapp</button>
+            <a href="tel:9037291113" style="color:white">
+              <button class="dark-btn" style="margin-right: 20px;">Call Now</button>
+            </a>
+            <a href="//api.whatsapp.com/send?phone=919037291113&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND"
+              title="Whatsapp">
+              <button class="light-btn"> <i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
+            </a>
           </div>
         </div>
       </div>
@@ -238,36 +248,40 @@
           <h5 class="footer-last-container-title">Calicut</h5>
           <address>
             <p class="footer-firstHeding" href="">Softronic</p>
-            <p href="">2nd Floor, Maniyatikudi Asfa BuildingMavoor Road, Calicut, Kerala</p>
+            <p href="">2nd Floor, Maniyatikudi Asfa Building Mavoor Road, Calicut, Kerala</p>
           </address>
           <address>
-            <p class="footer-MobileNumberEmail" href="">+917002865976</p>
-            <p class="footer-MobileNumberEmail" href="">email@gmail.com</p>
+            <a class="d-block text-dark footer-MobileNumberEmail" href="tel:9037291113">+91 9037-29-1113</a>
+            <a class="d-block text-dark footer-MobileNumberEmail"
+              href="mailto:info@softroniics.in">info@softroniics.in</a>
           </address>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-4 col-md-4 col-sm-6">
           <h5 class="footer-last-container-title">Perinthalmanna</h5>
           <address>
             <p class="footer-firstHeding" href="">Softronic</p>
-            <p href="">2nd Floor, Maniyatikudi Asfa BuildingMavoor Road, Calicut, Kerala</p>
+            <p href="">4th Floor,Qatar Tower Chanthully Padam, Angadipuram Perinthalmanna, Malappuram</p>
           </address>
           <address>
-            <p class="footer-MobileNumberEmail" href="">+917002865976</p>
-            <p class="footer-MobileNumberEmail" href="">email@gmail.com</p>
+            <a class="d-block text-dark footer-MobileNumberEmail" href="tel:7907435072">+91 7907-43-5072</a>
+            <a class="d-block text-dark footer-MobileNumberEmail"
+              href="mailto:info@softroniics.in">info@softroniics.in</a>
           </address>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
           <h5 class="footer-last-container-title">Palakkad</h5>
           <address>
             <p class="footer-firstHeding" href="">Softronic</p>
-            <p href="">2nd Floor, Maniyatikudi Asfa BuildingMavoor Road, Calicut, Kerala</p>
+            <p href="">2nd Floor, Vinayaka Building Vellan Street, Sulthanpet Near karur vysya Bank, Palakkad</p>
           </address>
           <address>
-            <p class="footer-MobileNumberEmail" href="">+917002865976</p>
-            <p class="footer-MobileNumberEmail" href="">email@gmail.com</p>
+
+            <a class="d-block text-dark footer-MobileNumberEmail" href="tel:8078910613">+91 8078-91-0613</a>
+            <a class="d-block text-dark footer-MobileNumberEmail"
+              href="mailto:info@softroniics.in">info@softroniics.in</a>
           </address>
         </div>
-        <div class="col-lg-3 col-md-8 col-sm-6 d-flex flex-lg-column flex-sm-row text-center align-items-center">
+        <div class="col-lg-2 col-md-8 col-sm-6 d-flex flex-lg-column flex-sm-row text-center align-items-center">
           <h4 class="footer-last-container-title mb-sm-0">Follow Us</h4>
           <a href="" class="p-2 footer-icons"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="" class="p-2 footer-icons"><i class="fa-brands fa-instagram"></i></a>
@@ -295,24 +309,28 @@
           </div>
         </div>
         <div class="row">
-          <form action="">
+          <form action="" id="formSubmition">
             <table class="form-table w-100">
               <tbody class="form-table-body">
                 <tr>
                   <td class="from-table-td"><label for="">Name</label></td>
-                  <td><input class="form-table-input" placeholder="Enter your name" type="text"></td>
+                  <td><input required title="Full Name" name="name" class="form-table-input"
+                      placeholder="Enter your name" type="text"></td>
                 </tr>
                 <tr>
                   <td class="from-table-td"><label for="">Qualification</label></td>
-                  <td><input class="form-table-input" placeholder="Your qualification" type="text"></td>
+                  <td><input required title="Qualification" name="qualification" class="form-table-input"
+                      placeholder="Your qualification" type="text"></td>
                 </tr>
                 <tr>
                   <td class="from-table-td"><label for="">Mail id</label></td>
-                  <td><input class="form-table-input" placeholder="Enter your mail id" type="text"></td>
+                  <td><input required title="Mail ID" name="email" class="form-table-input"
+                      placeholder="Enter your mail id" type="email"></td>
                 </tr>
                 <tr>
                   <td class="from-table-td"><label for="">Phone Number</label></td>
-                  <td><input class="form-table-input" placeholder="Enter your phone number" type="text"></td>
+                  <td><input required title="Mobile Number name=" number" class="form-table-input"
+                      placeholder="Enter your phone number" type="tel"></td>
                 </tr>
               </tbody>
             </table>
@@ -333,14 +351,42 @@
     </div>
   </noscript>
 
-  <script>window.addEventListener("load",formPopup());function formPopup() {var element = document.getElementById("popupContiner");if (element.style.display === "block") {element.style.display = "none";} else {element.style.display = "block";}}</script>
-  
-    <!-- Bootstrap Bundle with Popper -->
+  <script>window.addEventListener("load",() => {let checkIT = localStorage.getItem("formSubmit");console.log(checkIT);if (checkIT == null) {formPopup()}}); function formPopup() {
+    var element = document.getElementById("popupContiner");if (element.style.display === "block") {element.style.display = "none";} else {element.style.display = "block";}}
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('#formSubmition').submit((event) => {
+      event.preventDefault();
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwpBRqMKxE2acjfeAnWGHkxH6sZxsGdqHtsUD9r-JOWoc3cBkKxK2WJE9nbakmkxcHjwg/exec",
+        data: $("#formSubmition").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          if (response?.result === "success") {
+            localStorage.setItem("formSubmit", "true")
+            window.location.reload()
+          }
+        },
+        error: function (err) {
+          alert("Something Error")
+        }
+      })
+    })
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+
+    })
+  </script>
+  <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
- 
+
 </body>
 
 </html>

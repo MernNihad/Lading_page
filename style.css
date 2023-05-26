@@ -361,6 +361,9 @@ body {
 .form-table-input::placeholder{
     color: var(--light-white);
 }
+.form-table-input:focus-visible{
+    outline: 2px solid var(--global-bg-color);
+}
 .form-popup-close-btn{
     text-decoration: none;
     color: var(--light-white);
