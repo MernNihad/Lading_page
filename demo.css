@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+  }
+
+  .container {
+    margin: 20px;
+    overflow: scroll;
+    display: flex;
+    position: relative;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    height: auto;
+
+    border-radius: 4px;
+    transition: 1s;
+    margin: 15px 1px;
+    padding: 3px;
+  }
+
+  img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .card:hover {
+
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+  .overlaping-buttons {
+    /* transform: translate(50%); */
+    position: fixed;
+    top: 0px;
+    display: flex;
+    /* margin: 72px; */
+    width: 94%;
+    left: 35px;
+    top: 50%;
+    /* right: 28px; */
+    /* margin: 15px -2px; */
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+
+  }
+
+  .overlaping-buttons div {
+    font-size: 30px;
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: rgb(34, 30, 30);
+    background-color: white;
+
+  }

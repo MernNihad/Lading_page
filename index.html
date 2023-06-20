@@ -5,7 +5,6 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="120">
 
   <link rel="stylesheet" href="style.css">
 
@@ -22,16 +21,19 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!--card scrolling with buttons swipper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <title>Softroniic</title>
+  <title>Softroniics</title>
 </head>
 
 <body>
 
   <!-- Logo navbar section -->
-  <nav class="navbar bg-white">
+  <nav class="bg-white logo-navbar ">
     <a class="navbar-brand" href="#">
       <img src="./assets/logo.jpg" alt="">
+      <!-- <img src="./assets/curved-arrow-with-broken-line.png" alt=""> -->
     </a>
   </nav>
   <!-- --------------------------- -->
@@ -43,11 +45,11 @@
 
 
   <!-- first section -->
-  <section>
+  <section class="firstSection-mainContainer">
     <div class="container">
-      <div class="row">
-        <div class="firstSection col-xl-4 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center ">
-          <h4 class="section-heading-content" style="">We offer</h4>
+      <div class="row row__">
+        <div class="firstSection col-xl-7 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center ">
+          <h4 class="section-heading-content">We offer</h4>
           <h1 class="section-heading-title">High-Quality</h1>
           <p class="section-heading-content">
             training and development solutions for individuals and commercial enterprises.
@@ -59,8 +61,10 @@
             </button>
           </a>
         </div>
-        <div class="firstSection-imageContainer col-md-6 col-lg-6 col-xl-8 col-sm-6 text-center">
+        <div class="firstSection-imageContainer col-md-6 col-lg-6 col-xl-5 col-sm-6 text-center">
           <img src="./assets/men-icon-laptop.jpg" alt="">
+          <!-- <img src="./img/python.png"  alt=""> -->
+          <!-- <img src="./pics/pic1/SL_032619_19330_43.jpg" alt=""> -->
         </div>
       </div>
     </div>
@@ -102,7 +106,7 @@
   </section>
   <!-- second section -->
 
-
+  <!-- Card -->
   <!-- third section -->
   <section class="" style="margin-top: 5rem;">
     <div class="container">
@@ -120,11 +124,26 @@
   </section>
   <!-- ------- -->
 
-
+  <!-- Card -->
   <!-- third section -->
   <div class="container" style="margin-bottom: 6rem;">
     <div class="row">
       <div class="d-flex overflow-scroll sideCarosel">
+
+        <div class="rounded p-4 m-2 flipCard col-7 col-lg-4 text-center">
+          <img class="mb-2" src="./assets/frontend.png" alt="">
+          <h2>Front End Development</h2>
+          <p class="d-none d-sm-block">Front-end development deals with the development and implementation of the
+            user-facing interface of a website or application.</p>
+        </div>
+
+        <div class="rounded p-4 m-2 flipCard col-7 col-lg-4 text-center">
+          <img class="mb-2" src="./assets/frontend.png" alt="">
+          <h2>Digital Marketing</h2>
+          <p class="d-none d-sm-block">Digital Marketing, also known as online marketing, is marketing which uses the
+            internet and other online-based digital technologies to promote products and services.</p>
+        </div>
+
         <div class="rounded p-4 m-2 col-7 col-lg-4 flipCard text-center">
           <img class="mb-2" src="./assets/flutter.png" alt="">
           <h2>Flutter</h2>
@@ -167,19 +186,7 @@
             modern website and software development. </p>
         </div>
 
-        <div class="rounded p-4 m-2 flipCard col-7 col-lg-4 text-center">
-          <img class="mb-2" src="./assets/frontend.png" alt="">
-          <h2>Front End Development</h2>
-          <p class="d-none d-sm-block">Front-end development deals with the development and implementation of the
-            user-facing interface of a website or application.</p>
-        </div>
 
-        <div class="rounded p-4 m-2 flipCard col-7 col-lg-4 text-center">
-          <img class="mb-2" src="./assets/frontend.png" alt="">
-          <h2>Digital Marketing</h2>
-          <p class="d-none d-sm-block">Digital Marketing, also known as online marketing, is marketing which uses the
-            internet and other online-based digital technologies to promote products and services.</p>
-        </div>
 
       </div>
     </div>
@@ -246,6 +253,7 @@
       <div class="row footer-last-container p-md-4">
         <div class="col-lg-3 col-md-4 col-sm-6">
           <h5 class="footer-last-container-title">Calicut</h5>
+          <label class="underline-footer-content"></label>
           <address>
             <p class="footer-firstHeding" href="">Softroniics</p>
             <p href="">2nd Floor, Maniyatikudi Asfa Building Mavoor Road, Calicut, Kerala</p>
@@ -258,6 +266,7 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6">
           <h5 class="footer-last-container-title">Perinthalmanna</h5>
+          <label class="underline-footer-content"></label>
           <address>
             <p class="footer-firstHeding" href="">Softroniics</p>
             <p href="">4th Floor,Qatar Tower Chanthully Padam, Angadipuram Perinthalmanna, Malappuram</p>
@@ -270,6 +279,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
           <h5 class="footer-last-container-title">Palakkad</h5>
+          <label class="underline-footer-content"></label>
           <address>
             <p class="footer-firstHeding" href="">Softroniics</p>
             <p href="">2nd Floor, Vinayaka Building Vellan Street, Sulthanpet Near karur vysya Bank, Palakkad</p>
@@ -282,11 +292,20 @@
           </address>
         </div>
         <div class="col-lg-2 col-md-8 col-sm-6 d-flex flex-lg-column flex-sm-row text-center align-items-center">
-          <h4 class="footer-last-container-title mb-sm-0">Follow Us</h4>
-          <a href="https://www.facebook.com/softlabpalakkad?mibextid=ZbWKwL" class="p-2 footer-icons"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/softroniicsindia/?igshid=YmMyMTA2M2Y=" class="p-2 footer-icons"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/softroniics/" class="p-2 footer-icons"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.youtube.com/@softroniics" class="p-2 footer-icons"><i class="fa-brands fa-youtube"></i></a>
+          <div class="">
+            <h4 class="footer-last-container-title mb-sm-0">Follow Us</h4>
+            <label class="underline-footer-content"></label>
+          </div>
+          <div class="footer-social-media-icons-parent-div">
+            <a href="https://www.facebook.com/softlabpalakkad?mibextid=ZbWKwL" class="p-2 footer-icons"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/softroniicsindia/?igshid=YmMyMTA2M2Y=" class="p-2 footer-icons"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/softroniics/" class="p-2 footer-icons"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@softroniics" class="p-2 footer-icons"><i
+                class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -351,8 +370,9 @@
     </div>
   </noscript>
 
-  <script>window.addEventListener("load",() => {let checkIT = localStorage.getItem("formSubmit");console.log(checkIT);if (checkIT == null) {formPopup()}}); function formPopup() {
-    var element = document.getElementById("popupContiner");if (element.style.display === "block") {element.style.display = "none";} else {element.style.display = "block";}}
+  <script>window.addEventListener("load", () => { let checkIT = localStorage.getItem("formSubmit"); console.log(checkIT); if (checkIT == null) { formPopup() } }); function formPopup() {
+      var element = document.getElementById("popupContiner"); if (element.style.display === "block") { element.style.display = "none"; } else { element.style.display = "block"; }
+    }
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
