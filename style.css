@@ -69,7 +69,8 @@ body {
 .section-heading-content {
     color: var(--light-weight-dark);
     font-weight: 400;
-    font-size: 17px;
+    font-size: 26px; 
+    /* 17 */
 }
 
 .firstSection button {
